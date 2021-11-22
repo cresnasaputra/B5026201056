@@ -40,3 +40,16 @@ Route::post('/pegawai/update','PegawaiController@update');
 
 //delete
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+
+
+//tugas===============================================================================
+//route CRUD
+Route::get('/tugas','TugasController@index');
+
+Route::get('/tugas/tambah','TugasController@tambah');
+Route::post('/tugas/store','TugasController@store');
+
+Route::get('/tugas/edit/{id}','TugasController@edit');
+Route::post('/tugas/update','TugasController@update');
+
+Route::get('/tugas/hapus/{id}','TugasController@hapus');

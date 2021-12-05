@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Tugas CRUD PWEB</title>
 </head>
-<body>
+<body> --}}
+
+    @extends('layout.ceria')
+
+    @section('title', 'TUGAS')
+
+    @section('isikonten')
 
 	<h2>TUGAS CRUD PWEB B (5026201056)</h2>
 	<h3>Data Tugas</h3>
@@ -36,6 +42,6 @@
 		@endforeach
 	</table>
 
-
-</body>
-</html>
+    @endsection
+{{-- </body>
+</html> --}}

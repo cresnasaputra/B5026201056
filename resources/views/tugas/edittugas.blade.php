@@ -1,9 +1,14 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html>
 <head>
 	<title>TUGAS CRUD PWEB B</title>
 </head>
-<body>
+<body> --}}
+    @extends('layout.ceria')
+
+    @section('title', 'TUGAS')
+
+    @section('isikonten')
 
 	<h2>TUGAS CRUD PWEB B (5026201056)</h2>
 	<h3>Edit Tugas</h3>
@@ -24,7 +29,7 @@
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach
+    @endsection
 
-
-</body>
-</html>
+{{-- </body>
+</html> --}}

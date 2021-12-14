@@ -11,30 +11,30 @@
 
     <style>
             .footer {
-              position: fixed;
               left: 0;
               bottom: 0;
               width: 100%;
-              background-color:#111;
-              color: #f1f1f1;
+              background-color:#B9DAC1;
+              color: black;
               text-align: center;
+              font-size: 15px;
             }
 
             .header {
-                background-color: #111;
-                color: #f1f1f1;
+                background-color: #B9DAC1;
+                color: black;
                 text-align: right;
                 padding: 20px;
                 width: 100%;
             }
             .sidenav {
               height: 100%;
-              width: 160px;
+              width: 150px;
               position: fixed;
               z-index: 1;
               top: 0;
               left: 0;
-              background-color: #111;
+              background-color: #B9DAC1;
               overflow-x: hidden;
               padding-top: 20px;
             }
@@ -61,13 +61,17 @@
             .sidenav a {font-size: 18px;}
             }
 
+            img {
+                width: 20%;
+            }
+
         </style>
 </head>
 <body>
 <div class="header">
    <div class="row">
        <div class="col-xl-4">
-        <img src="" alt="Foto Cresna">
+        <img src="image/fotocresna.JPG" alt="Foto Cresna">
        </div>
        <div class="col-xl-8">
            <p>I Dewa Gede Cresna Saputra<br>
@@ -81,6 +85,7 @@
   <a href="/pegawai">Pegawai</a>
   <a href="/tugas">Tugas</a>
   <a href="/absen">Absen</a>
+  <a href="/agen">Praktikum</a>
 </div>
 
 <div class="main">

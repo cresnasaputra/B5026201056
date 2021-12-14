@@ -29,34 +29,31 @@ Route::get('ets', 'ViewController@showEts');
 Route::get('formpenjumlahan', 'ViewController@formLuas');
 Route::post('hasilpenjumlahan', 'ViewController@luasfunc');
 
-//route CRUD
+//route CRUD Pegawai
 Route::get('/pegawai','PegawaiController@index');
 Route::get('/pegawai/tambah','PegawaiController@tambah');
 Route::post('/pegawai/store','PegawaiController@store');
-
 //edit
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
-
 //delete
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+//cari
+Route::get('/pegawai/cari','PegawaiController@cari');
+//detail
+Route::get('/pegawai/view/{id}','PegawaiController@detail');
 
 
-//tugas===============================================================================
-//route CRUD
+//route CRUD tugas
 Route::get('/tugas','TugasController@index');
-
 Route::get('/tugas/tambah','TugasController@tambah');
 Route::post('/tugas/store','TugasController@store');
-
 Route::get('/tugas/edit/{id}','TugasController@edit');
 Route::post('/tugas/update','TugasController@update');
-
 Route::get('/tugas/hapus/{id}','TugasController@hapus');
 
 
 //absen
-
 Route::get('/absen','AbsenController@index');
 Route::get('/absen/tambah','AbsenController@tambah');
 Route::post('/absen/store','AbsenController@store');
@@ -64,3 +61,12 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 
+//agen
+Route::get('/agen','AgenController@index');
+Route::get('/agen/view/{id}','AgenController@detail');
+Route::get('/agen/tambah','AgenController@tambah');
+Route::post('/agen/store','AgenController@store');
+Route::get('/agen/hapus/{id}','AgenController@hapus');
+Route::get('/agen/cari','AgenController@cari');
+Route::get('/agen/edit/{id}','AgenController@edit');
+Route::post('/agen/update','AgenController@update');

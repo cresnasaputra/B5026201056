@@ -19,9 +19,9 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-success table-striped">
 		<tr>
-			<th>ID Pegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Nama Tugas</th>
 			<th>Status</th>
@@ -29,7 +29,7 @@
 		</tr>
 		@foreach($tugas as $t)
 		<tr>
-			<td>{{ $t->id_pegawai }}</td>
+			<td>{{ $t->pegawai_nama }}</td>
 			<td>{{ $t->tanggal }}</td>
 			<td>{{ $t->namaTugas }}</td>
 			<td>{{ $t->status }}</td>
@@ -41,6 +41,8 @@
 		</tr>
 		@endforeach
 	</table>
+
+    {{ $tugas->links() }}
 
     @endsection
 {{-- </body>

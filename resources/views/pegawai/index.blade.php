@@ -11,9 +11,9 @@
 
 @section('isikonten')
 
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-sm-3"></div>
-        <div class="col-sm-6">
+        <div class="col-sm-6"> --}}
             <h3>Data Pegawai</h3>
 
 	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a><br>
@@ -27,7 +27,7 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-success table-striped">
 		<tr>
 			<th>Nama</th>
 			{{-- <th>Jabatan</th>
@@ -43,7 +43,7 @@
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
                 <a href="/pegawai/view/{{ $p->pegawai_id }}">View Detail</a>
-
+                |
 				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
 				|
 				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
@@ -53,10 +53,10 @@
 	</table> <br>
 
         {{ $pegawai->links() }}
-    </div>
+    {{-- </div>
     <div class="col-sm-3"></div>
 
-    </div>
+    </div> --}}
 
 @endsection
 

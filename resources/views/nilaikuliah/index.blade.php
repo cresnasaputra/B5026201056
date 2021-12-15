@@ -7,6 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .footer {
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          color: black;
+          text-align: center;
+          font-size: 15px;
+          position: fixed;
+        }
+</style>
 </head>
 <body>
     <div class="container">
@@ -30,19 +42,17 @@
                 <td>{{ $nk->NilaiAngka }}</td>
                 <td>{{ $nk->SKS }}</td>
                 <td>
-                        <?php
-                            if($nk->NilaiAngka <=40){
-                                echo "D";
-                            } elseif ($nk->NilaiAngka >=41 && $nk->NilaiAngka <=60) {
-                                echo "C";
-                            } elseif ($nk->NilaiAngka >=61 && $nk->NilaiAngka <=80) {
-                                echo "B";
-                            } else{
-                                echo "A";
-                            }
-                            ?>
-
-
+                    <?php
+                        if($nk->NilaiAngka <=40){
+                            echo "D";
+                        } elseif ($nk->NilaiAngka >=41 && $nk->NilaiAngka <=60) {
+                            echo "C";
+                        } elseif ($nk->NilaiAngka >=61 && $nk->NilaiAngka <=80) {
+                            echo "B";
+                        } else{
+                            echo "A";
+                        }
+                        ?>
                 </td>
                 <td>
                     {{ number_format($nk->NilaiAngka * $nk->SKS, 0, ',', '.') }}
@@ -51,4 +61,7 @@
             @endforeach
         </table>
     </div>
+    <div class="footer">
+        Hak Cipta Oleh I Dewa Gede Cresna Saputra - 5026201056
+      </div>
 </body>

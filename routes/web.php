@@ -70,3 +70,8 @@ Route::get('/agen/hapus/{id}','AgenController@hapus');
 Route::get('/agen/cari','AgenController@cari');
 Route::get('/agen/edit/{id}','AgenController@edit');
 Route::post('/agen/update','AgenController@update');
+
+//nilaikuliah
+Route::get('/nilaikuliah','NilaiKuliahController@index');
+Route::get('/nilaikuliah/tambah','NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','NilaiKuliahController@store');
